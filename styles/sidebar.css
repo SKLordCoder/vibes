@@ -1,0 +1,99 @@
+.blankside {
+  width: 6.7%;
+  display: inline-block;
+  transition: all;
+  transition-duration: 0.3s;
+}
+.sidebar {
+  margin-top: 5vw;
+  width: 6.7%;
+  height: 77vh;
+  padding-top: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  /* border:  1px solid white; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  border: none;
+  border-right: 2px solid;
+  border-image: linear-gradient(to bottom, orange, darkorchid) 1;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3vw;
+  border-radius: 0.3vw;
+  padding: 0.4vw 0.9vw;
+}
+
+.music:hover {
+  transition: all;
+  transition-duration: 0.3s;
+  background-color: rgb(191, 90, 181);
+  cursor: pointer;
+}
+
+.mdet {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.mimg img {
+  width: 4vw;
+  height: 4vw;
+  object-fit: cover;
+  border-radius: 50% 50%;
+}
+.mname {
+  font-weight: 500;
+  font-size: 18px;
+}
+.open1 {
+  color: orange;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+.close1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close1 i,
+.open1 i {
+  font-size: 1.2vw;
+  border: 2px solid rgb(181, 2, 181);
+  border-radius: 50%;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: rgb(213, 140, 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1vw;
+}
+.close1 i:active,
+.open1 i:active {
+  transition: all;
+  transition-duration: 0.3s;
+  border: 2px solid orange;
+  background-color: rgb(181, 2, 181);
+}
+.sidebar.closedside {
+  transition: all;
+  transition-duration: 0.3s;
+  width: 6.7%;
+}
+.sidebar.openedside {
+  transition-duration: 0.3s;
+  width: 18%;
+}
